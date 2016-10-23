@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Map</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+    <script src="entities.js" ></script>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+        #map {
+            height: 100%;
+            color:#f0ff30;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #selectionField {
+            background: #ffffff;
+            width: 200px;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            margin-left: -100px;
+        }
+        #legend {
+            background: #ffffff;
+            width: 200px;
+            position: absolute;
+            right: 10%;
+            top: 10;
+            margin-left: -100px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<div id="selectionField">
+    <select id="yearSelected"></select>
+    <select id="categorySelected"></select>
+</div>
+<div id="legend">
+
+</div>
+
+<script src="mapOpps.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeHHTr8Xy6i3klhpjU1FKcsfWIr70hHd8&callback=initMap"
+        async defer></script>
+</body>
+</html>
